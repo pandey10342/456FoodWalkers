@@ -210,7 +210,7 @@ ons.ready(function() {
 	
 });
 /*END ONSEN*/
-function show(){
+function speak(){
 window.plugins.speechRecognition.startListening(
   function(success){
 	  console.log("ad" +success);
