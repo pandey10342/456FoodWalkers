@@ -211,7 +211,7 @@ ons.ready(function() {
 });
 /*END ONSEN*/
 function show(){
-window.plugins.speechRecognition.requestPermission(
+window.plugins.speechRecognition.startListening(
   function(success){
 	  console.log("ad" +success);
   },function(err){
@@ -223,7 +223,12 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady(){
 	try {
-		
+		window.plugins.speechRecognition.requestPermission(
+  function(success){
+	  console.log("ad" +success);
+  },function(err){
+	  console.log("adss :" + err);
+  })
 		navigator.splashscreen.hide();	
 		device_uiid = device.uuid;
 		device_platform = device.platform;		
