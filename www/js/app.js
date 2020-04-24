@@ -211,11 +211,12 @@ ons.ready(function() {
 });
 /*END ONSEN*/
 function show(){
-	TTS.speak('hello, world!').then(function () {
-            alert('success');
-        }, function (reason) {
-            alert(reason);
-        });
+window.plugins.speechRecognition.isRecognitionAvailable(
+  function(){
+	  console.log("ad");
+  },function(err){
+	  console.log("adss :" + err);
+  })
 }
 /*CORDOVA DEVICE READY*/
 document.addEventListener("deviceready", onDeviceReady, false);
