@@ -211,9 +211,9 @@ ons.ready(function() {
 });
 /*END ONSEN*/
 function show(){
-window.plugins.speechRecognition.isRecognitionAvailable(
-  function(){
-	  console.log("ad");
+window.plugins.speechRecognition.requestPermission(
+  function(success){
+	  console.log("ad" +success);
   },function(err){
 	  console.log("adss :" + err);
   })
