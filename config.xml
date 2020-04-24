@@ -159,5 +159,6 @@
         <splash height="2732" platform="ios" src="res/screens/ios/Default@2x~ipad~anyany.png" width="2732" />
         <splash height="2732" platform="ios" src="res/screens/ios/Default@2x~ipad~comany.png" width="1278" />
     </platform>
+    <plugin name="cordova-plugin-tts" spec="~0.2.3" />
     <plugin name="cordova-plugin-speechrecognition" spec="~1.1.2" />
 </widget>
