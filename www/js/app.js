@@ -216,7 +216,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady(){
 	try {
-		SpeechRecognition.requestPermission()
+		speechRecognition.requestPermission()
   .then(
     () => alert('Granted'),
     () => alert('Denied')
