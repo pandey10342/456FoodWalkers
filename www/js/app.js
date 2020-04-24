@@ -210,17 +210,19 @@ ons.ready(function() {
 	
 });
 /*END ONSEN*/
-
+function show(){
+	speechRecognition.requestPermission()
+  .then(
+    () => alert('Granted'),
+    () => alert('Denied')
+  )
+}
 /*CORDOVA DEVICE READY*/
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady(){
 	try {
-		speechRecognition.requestPermission()
-  .then(
-    () => alert('Granted'),
-    () => alert('Denied')
-  )
+		
 		navigator.splashscreen.hide();	
 		device_uiid = device.uuid;
 		device_platform = device.platform;		
