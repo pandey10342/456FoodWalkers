@@ -18,7 +18,7 @@ tabbarMenu = function(){
 	    html+='</ons-tab>';
 	    html+='<ons-tab page="search.html" label="'+ t("Search") +'" icon="ion-ios-search" active-icon="ion-search" >';
 	    html+='</ons-tab>';	
-        html+='<ons-tab  label="'+ t("Speak") +'" icon="ion-ios-mic-outline" active-icon="ion-ios-mic-outline" onclick="speak()">';
+        html+='<ons-tab page="home.html" label="'+ t("Speak") +'" icon="ion-ios-mic-outline" active-icon="ion-ios-mic-outline" onclick="speak()">';
 	    html+='</ons-tab>';	 		
 	    html+='<ons-tab page="profile.html" label="'+ t("Account") +'" icon="ion-android-contact" active-icon="ion-android-contact" >';
 	    html+='</ons-tab>';	    
