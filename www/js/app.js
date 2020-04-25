@@ -223,6 +223,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady(){
 	try {
+		
 		window.plugins.speechRecognition.requestPermission(
   function(success){
 	  console.log("ad" +success);
